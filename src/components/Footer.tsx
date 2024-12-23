@@ -78,7 +78,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-primary-800 text-center">
-          <p>&copy; 2024 Pawsome Pet Care. All rights reserved.</p>
+          <p>&copy; 2024 CozyPaws. All rights reserved.</p>
         </div>
       </div>
     </footer>

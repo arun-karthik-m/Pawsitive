@@ -6,9 +6,11 @@ const Hero = () => {
   const { toast } = useToast();
 
   const handleBookNow = () => {
+    const pricingSection = document.getElementById('pricing');
+    pricingSection?.scrollIntoView({ behavior: 'smooth' });
     toast({
-      title: "Booking Request Received",
-      description: "We'll contact you shortly to confirm your appointment!"
+      title: "Scrolling to Pricing",
+      description: "Check out our available packages!"
     });
   };
 

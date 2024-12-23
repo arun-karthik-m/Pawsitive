@@ -3,21 +3,36 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 const images = [
   {
-    url: "https://images.unsplash.com/photo-1582562124811-c09040d0a901",
-    alt: "Happy cat after grooming"
+    url: "https://images.unsplash.com/photo-1516734212186-65266f08a870",
+    alt: "Dog Walking Service"
   },
   {
-    url: "https://images.unsplash.com/photo-1535268647677-300dbf3d78d1",
-    alt: "Playful kitten"
+    url: "https://images.unsplash.com/photo-1589883661923-6476cb0ae9f2",
+    alt: "Pet Grooming"
   },
-  // Add more images as needed
+  {
+    url: "https://images.unsplash.com/photo-1612531822963-3ae4dead0160",
+    alt: "Pet Sitting"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1576201836106-db1758fd1c97",
+    alt: "Cat Care"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1602584386319-fa8eb4361c2c",
+    alt: "Health Check-up"
+  },
+  {
+    url: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b",
+    alt: "Dog Training"
+  }
 ];
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
-    <section className="py-16 bg-primary-50">
+    <section className="py-16 bg-primary-50" id="gallery">
       <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center mb-12">Our Gallery</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

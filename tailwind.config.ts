@@ -19,18 +19,25 @@ export default {
     },
     extend: {
       colors: {
-        petblue: "#D3E4FD",
-        petgreen: "#F2FCE2",
-        petbeige: "#F5F0E6",
+        primary: {
+          50: "#f0f7ff",
+          100: "#D3E4FD", // petblue
+          200: "#a6c8fb",
+          300: "#79aaf9",
+          400: "#4c8cf7",
+          500: "#1f6ef5",
+          600: "#0c55d4",
+          700: "#0943aa",
+          800: "#063280",
+          900: "#042156",
+          DEFAULT: "#1f6ef5",
+          foreground: "#ffffff",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",

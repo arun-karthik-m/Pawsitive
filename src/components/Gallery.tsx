@@ -3,7 +3,7 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 const images = [
   {
-    url: "https://images.unsplash.com/photo-1516734212186-65266f08a870",
+    url: "https://unsplash.com/photos/a-person-walking-a-group-of-dogs-TWrtodIYgYE",
     alt: "Dog Walking Service"
   },
   {

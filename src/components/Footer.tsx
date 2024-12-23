@@ -3,7 +3,9 @@ import { Facebook, Instagram, Twitter } from "lucide-react";
 const Footer = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (

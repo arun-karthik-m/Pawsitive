@@ -7,15 +7,17 @@ const Hero = () => {
 
   const handleBookNow = () => {
     const pricingSection = document.getElementById('pricing');
-    pricingSection?.scrollIntoView({ behavior: 'smooth' });
-    toast({
-      title: "Scrolling to Pricing",
-      description: "Check out our available packages!"
-    });
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth' });
+      toast({
+        title: "Scrolling to Pricing",
+        description: "Check out our available packages!"
+      });
+    }
   };
 
   return (
-    <div className="relative min-h-[600px] flex items-center justify-center bg-primary-100">
+    <div className="relative min-h-screen flex items-center justify-center bg-primary-100">
       <div 
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
